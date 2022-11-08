@@ -14,6 +14,9 @@ class CustomCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        self.backgroundColor = UIColor.darkGray
+        self.layer.cornerRadius = 4
+        label.textColor = UIColor.white
     }
     
     override func prepareForReuse() {
