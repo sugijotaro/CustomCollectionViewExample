@@ -8,10 +8,24 @@
 import UIKit
 
 class CustomCell: UICollectionViewCell {
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
-
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        label.text = ""
+        imageView.image = UIImage()
+    }
+    
+    func setupCell(imageName: String, labelText: String) {
+        label.text = labelText
+        imageView.image = UIImage(named: imageName)
+    }
+    
 }

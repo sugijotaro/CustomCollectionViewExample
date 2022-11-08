@@ -41,6 +41,10 @@
                 <constraint firstAttribute="bottom" secondItem="xAd-8t-RPs" secondAttribute="bottom" id="qr3-hZ-pPT"/>
             </constraints>
             <size key="customSize" width="332" height="126"/>
+            <connections>
+                <outlet property="imageView" destination="xAd-8t-RPs" id="wgc-ga-3XL"/>
+                <outlet property="label" destination="3Ja-kf-0fd" id="eLk-b0-UZG"/>
+            </connections>
             <point key="canvasLocation" x="112.97709923664122" y="46.478873239436624"/>
         </collectionViewCell>
     </objects>
